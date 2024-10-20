@@ -1,0 +1,94 @@
+/* Reset some default styles */
+body, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #e7feff;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+header .auth-buttons button {
+    margin: 0 5px;
+}
+
+.hero {
+    background: url('1.webp') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero .cta-button {
+    background: #f04a4a;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+.features .feature {
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer nav a {
+    color: #fff;
+    margin: 0 10px;
+}
+
+.footer .newsletter input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+
+.recommendations {
+    padding: 20px;
+    text-align: center;
+}
+
+.recommendations img {
+    max-width: 300px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}

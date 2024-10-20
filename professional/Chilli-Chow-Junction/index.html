@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chilli Chow Junction</title>
+    <meta name="description" content="Get in touch with Chilli Chow Junction, a popular fast food spot in Jamshedpur. Find our location, contact details, and more on our contact page.">
+    <meta name="keywords" content="Chilli Chow Junction, fast food, Jamshedpur, contact us, restaurant location, food delivery, get in touch">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="images/logo.jpeg" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #040115;
+            color: #333;
+        }
+
+        nav {
+            background-color: #f34601;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav h1 {
+            margin: 0;
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffeb3b;
+        }
+
+        .coming-soon {
+    text-align: center;
+    padding: 150px 20px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+.coming-soon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/logo.jpeg') no-repeat center center/cover;
+    filter: blur(2px); 
+    z-index: -1; 
+}
+
+
+        .coming-soon h2 {
+            font-size: 3.5em;
+            text-align: center; 
+    background-image: url('https://rukminim2.flixcart.com/image/850/1000/kp4difk0/wallpaper/f/e/v/228-40-3d-wallpaper-27-colorsolution-original-imag3ffz9zyzymrj.jpeg?q=90&crop=false'); 
+    background-size: contain; -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+            animation: fadeInDown 2.5s ease-in-out;
+        }
+
+        .coming-soon p {
+            font-size: 1.5em;
+            background-image: url('https://rukminim2.flixcart.com/image/850/1000/kp4difk0/wallpaper/f/e/v/228-40-3d-wallpaper-27-colorsolution-original-imag3ffz9zyzymrj.jpeg?q=90&crop=false'); 
+            background-size: contain; -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+        .menu-section {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            animation: slideInRight 1.5s ease-in-out;
+        }
+
+        .menu-section h3 {
+            color: #d32f2f;
+            margin-bottom: 10px;
+        }
+
+        
+
+        footer {
+            background-color: #f34601;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeInDown {
+            0% { opacity: 0; transform: translateY(-100px); }
+            100% { opacity: 1; transform: translateY(20px); }
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideInRight {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(0); }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+
+
+        @media (max-width: 1200px) {
+            nav h1 {
+                font-size: 1.6em;
+            }
+
+            nav ul li {
+                margin-left: 15px;
+            }
+
+            .coming-soon h2 {
+                font-size: 3em;
+            }
+
+            .coming-soon p {
+                font-size: 1.2em;
+            }
+
+            .menu-section {
+                margin: 10px;
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+
+            .coming-soon h2 {
+                font-size: 2.5em;
+            }
+
+            .coming-soon p {
+                font-size: 1em;
+            }
+
+            .menu-section {
+                margin: 5px;
+                padding: 10px;
+            }
+
+            table {
+                font-size: 0.9em;
+            }
+
+            td img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav ul li {
+                margin-top: 5px;
+            }
+
+            .coming-soon h2 {
+                font-size: 2em;
+            }
+
+            .coming-soon p {
+                font-size: 0.9em;
+            }
+
+            .menu-section {
+                margin: 5px;
+                padding: 5px;
+            }
+
+            table {
+                font-size: 0.8em;
+            }
+
+            td img {
+                width: 18px;
+                height: 18px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            nav h1 {
+                font-size: 1.4em;
+            }
+
+            nav ul li {
+                margin-top: 5px;
+                font-size: 0.9em;
+            }
+
+            .coming-soon h2 {
+                font-size: 1.8em;
+            }
+
+            .coming-soon p {
+                font-size: 0.8em;
+            }
+
+            .menu-section {
+                margin: 5px;
+                padding: 5px;
+            }
+
+            table {
+                font-size: 0.7em;
+            }
+
+            td img {
+                width: 16px;
+                height: 16px;
+            }
+        }
+        .responsive-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.responsive-images img {
+    max-width: 100%;
+    height: auto;
+    flex: 1 1 auto;
+    object-fit: cover; 
+}
+
+@media (max-width: 768px) {
+    .responsive-images {
+        flex-direction: column; 
+        align-items: center;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Chilli Chow Junction</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Order Now</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="coming-soon">
+        <h2>Taste the Difference at Chilli Chow Junction!</h2> 
+        <p>Join us for the grand opening on August 25th at Nead Patel School, and savor the ultimate momo and chowmein experience! Open daily from 4 PM to 10:30 PM—your new favorite spot in Jamshedpur awaits!</p>
+    </div>
+    <h1 style="text-align: center; color: #f34601;">Menu </h1>
+    <div class="responsive-images">
+        <img src="images/210.png" alt="">
+        <img src="images/220.png" alt="">
+        <img src="images/menu.png" alt="">
+    </div>
+    <footer class="footer" id="contact" style="background-color: #f34601;">
+        <div class="footer-text">
+           
+            <p>&copy; 2024 Chilli Chow Junction. All rights reserved.</p>
+           
+            <p>
+
+                <B style="color: rgb(8, 193, 255);">Designed by <a href="https://www.linkedin.com/in/ankit-kumar-01a52827b/" style="color: rgb(214, 214, 214);">ankit</a></B>
+            </p>
+        </div>
+        <p style="font-weight: bolder;color: whitesmoke;text-align: center;">Number of visitors   : <span class="counter" id="visitor-count" style="color: whitesmoke; font-weight: bolder;text-align: center;"></span></p>
+        <script>
+            if (!localStorage.getItem('visitorCount')) {
+                localStorage.setItem('visitorCount', 1);
+            } else {
+                let count = parseInt(localStorage.getItem('visitorCount'));
+                count += 1;
+                localStorage.setItem('visitorCount', count);
+            }
+            document.getElementById('visitor-count').textContent = localStorage.getItem('visitorCount');
+        </script>
+
+        <div class="footer-iconTop">
+            <a href="index.html" style="background: rgb(183, 234, 250);"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+  
+</body>
+</html>
